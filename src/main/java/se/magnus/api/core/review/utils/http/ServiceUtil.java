@@ -15,7 +15,7 @@ public class ServiceUtil implements ApplicationListener<WebServerInitializedEven
 
     public Integer getServerPort(){return serverPort;}
     public String getServerIp(){return serverIp;}
-    private String getServerAddress(){return "http://" + serverIp + ":" + serverPort;}
+    public String getServerAddress(){return "http://" + serverIp + ":" + serverPort;}
 
     @Override
     public void onApplicationEvent(WebServerInitializedEvent event){

@@ -15,10 +15,10 @@ public class ReviewEntity {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private int reviewId;
+    private Integer reviewId;
 
     @Column(nullable = false)
-    private int productId;
+    private Integer productId;
     @Column(nullable = false)
     private String author;
     @Column(nullable = false)
